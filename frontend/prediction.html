@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #56ccf2, #2f80ed);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 12px;
+            width: 350px;
+            margin: auto;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #00c853;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #009624;
+        }
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: #0288d1;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #01579b;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h2>🌿 Enter Details for Crop Prediction</h2>
+    <form action="/predict" method="POST">
+        <input type="number" step="any" name="input1" placeholder="Nitrogen" required><br>
+        <input type="number" step="any" name="input2" placeholder="Phosphorus" required><br>
+        <input type="number" step="any" name="input3" placeholder="Potassium" required><br>
+        <input type="number" step="any" name="input4" placeholder="Temperature (°C)" required><br>
+        <input type="number" step="any" name="input5" placeholder="Humidity (%)" required><br>
+        <input type="number" step="any" name="input6" placeholder="pH Value" required><br>
+        <input type="number" step="any" name="input7" placeholder="Rainfall (mm)" required><br>
+        <button type="submit">Predict Crop</button>
+    </form>
+    <br>
+    <a href="/" class="btn">🏠 Back to Home</a>
+</body>
+</html>
+
+
+

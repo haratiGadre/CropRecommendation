@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #11998e, #38ef7d);
+            color: white;
+            text-align: center;
+            padding-top: 15%;
+        }
+        h1 {
+            font-size: 2.2em;
+        }
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: #0277bd;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 10px;
+            display: inline-block;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #01579b;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>🌾 Recommended Crop: {{ crop }}</h1>
+    <p>Based on your inputs, this is the most suitable crop for your field.</p>
+    <a href="/prediction" class="btn">🔁 Predict Again</a>
+    <a href="/" class="btn">🏠 Back to Home</a>
+</body>
+</html>

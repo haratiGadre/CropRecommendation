@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "backend/.venv/bin/python",  // If using a virtual env
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "backend/__pycache__": true
+    },
+    "editor.formatOnSave": true
+  }
